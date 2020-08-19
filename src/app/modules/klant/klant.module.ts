@@ -7,6 +7,5 @@ import { KlantHomeComponent } from './klant-home/klant-home.component';
 @NgModule({
   declarations: [KlantHomeComponent],
   imports: [CommonModule, KlantRoutingModule],
-  exports: [KlantHomeComponent],
 })
 export class KlantModule {}

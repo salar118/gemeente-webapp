@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { KlantHomeComponent } from './klant-home/klant-home.component';
 
-const routes: Routes = [];
+const routes: Routes = [{ path: 'klant', component: KlantHomeComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class KlantRoutingModule { }
+export class KlantRoutingModule {}
