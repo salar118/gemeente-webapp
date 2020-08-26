@@ -1,5 +1,40 @@
-<a routerLink="/klant">Klant</a>
+<!-- <a routerLink="/klant">Klant</a>
 <a routerLink="/behandeling">Behandeling</a>
-<a routerLink="/intake">Intake</a>
-
-<router-outlet></router-outlet>
+<a routerLink="/intake">Intake</a> -->
+<div class="container relative">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/klant">
+      <img
+        src="../assets/img/bootstrap-solid.svg"
+        width="30"
+        height="30"
+        alt=""
+      />
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/klant"
+            >Klant <span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/intake">Intake</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/behandeling">Behandeling</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control mr-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
